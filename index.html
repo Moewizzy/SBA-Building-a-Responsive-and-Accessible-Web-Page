@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moe's SBA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+
+  
+  <header class="header">
+    
+ 
+    <img src="images/PerScholas-Collab-EVOGENCY-dark.png" alt="Per Scholas Logo COLLAB WITH EVOGENCY" >
+
+    
+    <nav role="navigation" aria-label="Main menu">
+      
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main id="main">
+
+    
+    <section class="hero" id="home">
+      <h1>Building a Responsive and Accessible Web Page</h1>
+      <p>We build pages that fit every screen and every person.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <article>
+        <p>Accessible Design Co. is a small team that builds simple, fast, accessible websites.</p>
+      </article>
+    </section>
+
+    
+    <section class="section" id="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          
+          <img src="images/icon-flexbox.svg" alt="Flexbox icon">
+          <h3>Flexbox Layouts</h3>
+          <p>Rows of items that line up and space out on their own.</p>
+        </article>
+        <article class="card">
+          <img src="images/icon-grid.svg" alt="Grid icon">
+          <h3>Grid Layouts</h3>
+          <p>Rows and columns that shrink to one column on phones.</p>
+        </article>
+        <article class="card">
+          <img src="images/icon-aria.svg" alt="Accessibility icon">
+          <h3>Accessibility</h3>
+          <p>Pages that work with keyboards and screen readers.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+
+      
+      <form id="contact-form" novalidate>
+
+       
+        <label for="name">Name</label>
+        <input type="text" id="name" required aria-describedby="name-error">
+        <p class="error" id="name-error"></p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required aria-describedby="email-error">
+        <p class="error" id="email-error"></p>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" required aria-describedby="subject-error">
+        <p class="error" id="subject-error"></p>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required aria-describedby="message-error"></textarea>
+        <p class="error" id="message-error"></p>
+
+        <button class="btn" type="submit">Send</button>
+
+        
+        <p class="success" id="success" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <p>&copy; Mohamed Eltoukhy</p>
+    <p>moe@evogencyglobal.com | 813-897-1954</p>
+    
+    <p>
+      <a href="https://github.com/Moewizzy" aria-label="Our GitHub page">GitHub</a>
+      <a href="https://www.linkedin.com/in/l2ke/" aria-label="Our LinkedIn page">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
